@@ -14,6 +14,7 @@ body {
   height: 100vh; /* Full viewport height */
   overflow-y: scroll; /* Enable vertical scrolling */
   scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+  position: relative; /* Position relative to allow absolute positioning of dots */
 
   /* Hide the scrollbar */
   scrollbar-width: none; /* For Firefox */
@@ -46,4 +47,26 @@ body {
 
 .project:nth-child(3) {
   background-color: #8b4513; /* Saddle brown for the third project */
+}
+
+.dots {
+  position: fixed; /* Fix the dots to the viewport */
+  right: 20px; /* Position on the right-hand side */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  display: flex;
+  flex-direction: column; /* Stack dots vertically */
+  gap: 10px; /* Add spacing between dots */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Default dot color */
+  border-radius: 50%; /* Make the dots circular */
+  transition: background-color 0.3s ease; /* Smooth transition for active state */
+}
+
+.dot.active {
+  background-color: #2e458b; /* Highlight active dot with Blue */
 }
