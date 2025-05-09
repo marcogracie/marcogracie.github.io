@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body takes up the full height */
+  overflow: hidden; /* Prevent scrolling outside the intended container */
+}
+
+.projects {
+  text-align: center; /* Center the text inside the project */
+  color: white; /* White text for contrast */
+  font-family: "Playfair Display", serif; /* Use the same font as the header */
+  font-size: 1.5rem; /* Increase font size */
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+
+  /* Hide the scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.projects::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.project {
+  height: 100vh; /* Each project takes up the full viewport height */
+  width: 100vw; /* Each project takes up the full viewport width */
+  scroll-snap-align: start; /* Snap to the start of each project */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-family: "Playfair Display", serif; /* Use the same font as the header */
+  font-size: 2rem; /* Increase font size for better readability */
+  color: white; /* White text for contrast */
+}
+
+.project:nth-child(1) {
+  background-color: #2e8b57; /* Earthy green for the first project */
+}
+
+.project:nth-child(2) {
+  background-color: #4682b4; /* Steel blue for the second project */
+}
+
+.project:nth-child(3) {
+  background-color: #8b4513; /* Saddle brown for the third project */
+}
