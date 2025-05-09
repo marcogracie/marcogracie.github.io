@@ -5,10 +5,16 @@
   color: white; /* White text */
   padding: 0 30px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center all content horizontally */
   height: 80px; /* Height of the header */
   width: 100%; /* Full width */
+  position: relative; /* Allow absolute positioning for the title */
+}
+
+.left-area {
+  position: absolute; /* Position the title absolutely */
+  left: 30px; /* Align the title to the left */
 }
 
 .left-area h1 {
@@ -19,4 +25,31 @@
 
 #header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.center-area {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the links horizontally */
+  gap: 20px; /* Add even spacing between the links */
+}
+
+.menu_button {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White text color */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  font-family: "Playfair Display", serif; /* Use the same font as the header */
+  padding: 10px 15px; /* Add padding for clickable area */
+  border-radius: 5px; /* Slightly round the corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.menu_button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #2e8b57; /* Earthy green text on hover */
+}
+
+.menu_selected {
+  background-color: #ffffff; /* White background for active link */
+  color: #2e8b57; /* Earthy green text for active link */
+  font-weight: bold; /* Make the active link bold */
 }
