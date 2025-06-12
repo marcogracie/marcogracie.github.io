@@ -1,0 +1,30 @@
+.landingPage {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add some padding around the content */
+  box-sizing: border-box; /* Include padding in the element's dimensions */
+}
+
+.imageContainer {
+  flex: 1; /* Allow the image to take up a portion of the space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.imageContainer img {
+  border-radius: 50%; /* Make the image circular */
+  width: 250px; /* Larger width */
+  height: 250px; /* Larger height */
+  object-fit: cover; /* Ensure the image fits within the circular frame */
+}
+
+.paragraphContainer {
+  flex: 2; /* Allow the text to take up more space */
+  font-family: Arial, sans-serif; /* Set a font for the text */
+  font-size: 1.2rem; /* Increase font size */
+  line-height: 1.8; /* Improve readability */
+  padding-left: 20px; /* Add space between the image and text */
+}
