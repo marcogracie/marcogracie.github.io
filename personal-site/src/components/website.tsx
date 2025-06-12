@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./layout";
 import LandingPage from "./main/landingPage";
 import ProjectPage from "./main/projectPage";
+//import ContactPage from "./main/contactPage";
 
 /**
  * Represents the main component of the site.

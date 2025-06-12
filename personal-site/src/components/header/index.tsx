@@ -30,6 +30,15 @@ const Header = () => {
           Projects
         </NavLink>
         <NavLink
+          to="/fun"
+          id="fun-page"
+          className={({ isActive }) =>
+            `menu_button ${isActive ? "menu_selected" : ""}`
+          }
+        >
+          Fun Stuff
+        </NavLink>
+        <NavLink
           to="/contact"
           id="contact-page"
           className={({ isActive }) =>
